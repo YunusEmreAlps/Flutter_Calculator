@@ -6,6 +6,7 @@ const kShadowColor = Color(0xFF364564);
 const kPrimaryColor = Color(0xFFFF7643);
 
 // Light
+const kLightGrayColor = Color(0xFFD4D4D2);
 const kTitleTextLightColor = Colors.white;
 const kAccentLightColor = Color(0xFFB3BFD7);
 const kPrimaryLightColor = Color(0xFFE4E9F2);

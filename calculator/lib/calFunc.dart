@@ -11,7 +11,7 @@ List<String> allInputs = [];
 
 calculation(String input) {
   // If user press the clear button
-  if (input == "AC") {
+  if (input == "C") {
     num1List = [];
     num2List = [];
     _parameters = [];
@@ -57,12 +57,13 @@ calculation(String input) {
       num2List.add(input);
     }
   }
-  if (input == "+" || input == "-" || input == "x" || input == "÷" || input == "Mod" || input == "%") {
+  if (input == " + " || input == " - " || input == " x " || input == " ÷ " || input == " mod " || input == " % ") {
     if (_parameters.length == 0) {
       // When for the first time we hit any Operator button
       _parameters.add(input); 
 
-      if((input == "%")) {
+      // Percent
+      if((input == " % ")) {
         allOperations();
       }
     } else {
@@ -72,41 +73,41 @@ calculation(String input) {
     }
   }
 
-  if(input != "%") {
+  if((input != " % ")) {
     allInputs.add(input);
     displayInputs = allInputs.join();
   }
 }
 
 void allOperations() {
-  if (_parameters[_parameters.length - 1] == "+") {
+  if (_parameters[_parameters.length - 1] == " + ") {
     double sum = addition(num1List.join(), num2List.join());
     num1List = ["$sum"];
     num2List = [];
     result = sum;
-  } else if (_parameters[_parameters.length - 1] == "-") {
+  } else if (_parameters[_parameters.length - 1] == " - ") {
     double subtract = subtraction(num1List.join(), num2List.join());
     num1List = ["$subtract"];
     num2List = [];
     result = subtract;
-  } else if (_parameters[_parameters.length - 1] == "x") {
+  } else if (_parameters[_parameters.length - 1] == " x ") {
     double multi = multiplication(num1List.join(), num2List.join());
     num1List = ["$multi"];
     num2List = [];
     result = multi;
-  } else if (_parameters[_parameters.length - 1] == "÷") {
+  } else if (_parameters[_parameters.length - 1] == " ÷ ") {
     double divi = division(num1List.join(), num2List.join());
     num1List = ["$divi"];
     num2List = [];
     result = divi;
   }
-  else if (_parameters[_parameters.length - 1] == "Mod") {
+  else if (_parameters[_parameters.length - 1] == " mod ") {
     double mod = module(num1List.join(), num2List.join());
     num1List = ["$mod"];
     num2List = [];
     result = mod;
   }
-  else if (_parameters[_parameters.length - 1] == "%") {
+  else if (_parameters[_parameters.length - 1] == " % ") {
     double per = percent(num1List.join());
     num1List = [];
     _parameters = [];

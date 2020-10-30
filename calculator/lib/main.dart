@@ -26,6 +26,7 @@ class MyApp extends StatelessWidget {
       home: SafeArea(
         child: Scaffold(
           body: Calculator(),
+          resizeToAvoidBottomPadding: false,
         ),
       ),
     );
@@ -77,45 +78,45 @@ class _CalculatorState extends State<Calculator> {
           children: <Widget>[
             // All Clear
             CalculatorButton(
-              text: "AC",
-              backgroundColor: kPrimaryColor.withOpacity(0.8),
-              textColor: Colors.white,
+              text: "C",
+              backgroundColor: kSecondaryLightColor.withOpacity(0.3),
+              textColor: kPrimaryColor,
               press: () {
                 setState(() {
-                  calculation("AC");
+                  calculation("C");
                 });
               },
             ),
             // Modulo
             CalculatorButton(
-              text: "Mod",
-              backgroundColor: kSurfaceDarkColor.withOpacity(0.8),
-              textColor: Colors.white,
+              text: "mod",
+              backgroundColor: kSecondaryLightColor.withOpacity(0.3),
+              textColor: kPrimaryColor,
               press: () {
                 setState(() {
-                  calculation("Mod");
+                  calculation(" mod ");
                 });
               },
             ),
             // %
             CalculatorButton(
               text: "%",
-              backgroundColor: kSurfaceDarkColor.withOpacity(0.8),
-              textColor: Colors.white,
+              backgroundColor: kSecondaryLightColor.withOpacity(0.3),
+              textColor: kPrimaryColor,
               press: () {
                 setState(() {
-                  calculation("%");
+                  calculation(" % ");
                 });
               },
             ),
             // Division
             CalculatorButton(
               text: "÷",
-              backgroundColor: kSurfaceDarkColor.withOpacity(0.8),
-              textColor: Colors.white,
+              backgroundColor: kSecondaryLightColor.withOpacity(0.3),
+              textColor: kPrimaryColor,
               press: () {
                 setState(() {
-                  calculation("÷");
+                  calculation(" ÷ ");
                 });
               },
             ),
@@ -127,7 +128,8 @@ class _CalculatorState extends State<Calculator> {
             // 7
             CalculatorButton(
               text: "7",
-              textColor: kSurfaceDarkColor.withOpacity(0.8),
+              backgroundColor: kSecondaryLightColor.withOpacity(0.3),
+              textColor: kSurfaceDarkColor,
               press: () {
                 setState(() {
                   calculation("7");
@@ -137,7 +139,8 @@ class _CalculatorState extends State<Calculator> {
             // 8
             CalculatorButton(
               text: "8",
-              textColor: kSurfaceDarkColor.withOpacity(0.8),
+              backgroundColor: kSecondaryLightColor.withOpacity(0.3),
+              textColor: kSurfaceDarkColor,
               press: () {
                 setState(() {
                   calculation("8");
@@ -147,7 +150,8 @@ class _CalculatorState extends State<Calculator> {
             // 9
             CalculatorButton(
               text: "9",
-              textColor: kSurfaceDarkColor.withOpacity(0.8),
+              backgroundColor: kSecondaryLightColor.withOpacity(0.3),
+              textColor: kSurfaceDarkColor,
               press: () {
                 setState(() {
                   calculation("9");
@@ -157,11 +161,11 @@ class _CalculatorState extends State<Calculator> {
             // x
             CalculatorButton(
               text: "x",
-              backgroundColor: kSurfaceDarkColor.withOpacity(0.8),
-              textColor: Colors.white,
+              backgroundColor: kSecondaryLightColor.withOpacity(0.3),
+              textColor: kPrimaryColor,
               press: () {
                 setState(() {
-                  calculation("x");
+                  calculation(" x ");
                 });
               },
             ),
@@ -173,7 +177,8 @@ class _CalculatorState extends State<Calculator> {
             // 4
             CalculatorButton(
               text: "4",
-              textColor: kSurfaceDarkColor.withOpacity(0.8),
+              backgroundColor: kSecondaryLightColor.withOpacity(0.3),
+              textColor: kSurfaceDarkColor,
               press: () {
                 setState(() {
                   calculation("4");
@@ -183,7 +188,8 @@ class _CalculatorState extends State<Calculator> {
             // 5
             CalculatorButton(
               text: "5",
-              textColor: kSurfaceDarkColor.withOpacity(0.8),
+              backgroundColor: kSecondaryLightColor.withOpacity(0.3),
+              textColor: kSurfaceDarkColor,
               press: () {
                 setState(() {
                   calculation("5");
@@ -193,7 +199,8 @@ class _CalculatorState extends State<Calculator> {
             // 6
             CalculatorButton(
               text: "6",
-              textColor: kSurfaceDarkColor.withOpacity(0.8),
+              backgroundColor: kSecondaryLightColor.withOpacity(0.3),
+              textColor: kSurfaceDarkColor,
               press: () {
                 setState(() {
                   calculation("6");
@@ -203,11 +210,11 @@ class _CalculatorState extends State<Calculator> {
             // -
             CalculatorButton(
               text: "-",
-              backgroundColor: kSurfaceDarkColor.withOpacity(0.8),
-              textColor: Colors.white,
+              backgroundColor: kSecondaryLightColor.withOpacity(0.3),
+              textColor: kPrimaryColor,
               press: () {
                 setState(() {
-                  calculation("-");
+                  calculation(" - ");
                 });
               },
             ),
@@ -219,7 +226,8 @@ class _CalculatorState extends State<Calculator> {
             // 1
             CalculatorButton(
               text: "1",
-              textColor: kSurfaceDarkColor.withOpacity(0.8),
+              backgroundColor: kSecondaryLightColor.withOpacity(0.3),
+              textColor: kSurfaceDarkColor,
               press: () {
                 setState(() {
                   calculation("1");
@@ -229,7 +237,8 @@ class _CalculatorState extends State<Calculator> {
             // 2
             CalculatorButton(
               text: "2",
-              textColor: kSurfaceDarkColor.withOpacity(0.8),
+              backgroundColor: kSecondaryLightColor.withOpacity(0.3),
+              textColor: kSurfaceDarkColor,
               press: () {
                 setState(() {
                   calculation("2");
@@ -239,7 +248,8 @@ class _CalculatorState extends State<Calculator> {
             // 3
             CalculatorButton(
               text: "3",
-              textColor: kSurfaceDarkColor.withOpacity(0.8),
+              backgroundColor: kSecondaryLightColor.withOpacity(0.3),
+              textColor: kSurfaceDarkColor,
               press: () {
                 setState(() {
                   calculation("3");
@@ -249,11 +259,11 @@ class _CalculatorState extends State<Calculator> {
             // +
             CalculatorButton(
               text: "+",
-              backgroundColor: kSurfaceDarkColor.withOpacity(0.8),
-              textColor: Colors.white,
+              backgroundColor: kSecondaryLightColor.withOpacity(0.3),
+              textColor: kPrimaryColor,
               press: () {
                 setState(() {
-                  calculation("+");
+                  calculation(" + ");
                 });
               },
             ),
@@ -262,29 +272,30 @@ class _CalculatorState extends State<Calculator> {
         // Buttons (Numbers, Addition)
         Row(
           children: <Widget>[
+            // Nothing
             CalculatorButton(
               text: "",
-              textColor: kSurfaceDarkColor.withOpacity(0.8),
+              backgroundColor: kSecondaryLightColor.withOpacity(0.3),
+              textColor: kSurfaceDarkColor,
               press: () {
-                setState(() {
-                  calculation("");
-                });
               },
             ),
             // 0
             CalculatorButton(
               text: "0",
-              textColor: kSurfaceDarkColor.withOpacity(0.8),
+              backgroundColor: kSecondaryLightColor.withOpacity(0.3),
+              textColor: kSurfaceDarkColor,
               press: () {
                 setState(() {
                   calculation("0");
                 });
               },
             ),
-            // .
+            // Nothing
             CalculatorButton(
               text: ".",
-              textColor: kSurfaceDarkColor.withOpacity(0.8),
+              backgroundColor: kSecondaryLightColor.withOpacity(0.3),
+              textColor: kSurfaceDarkColor,
               press: () {
                 setState(() {
                   calculation(".");
@@ -294,8 +305,8 @@ class _CalculatorState extends State<Calculator> {
             // =
             CalculatorButton(
               text: "=",
-              backgroundColor: kPrimaryColor.withOpacity(0.8),
-              textColor: Colors.white,
+              backgroundColor: kSecondaryLightColor.withOpacity(0.3),
+              textColor: kPrimaryColor,
               press: () {
                 setState(() {
                   calculation("=");
@@ -304,8 +315,6 @@ class _CalculatorState extends State<Calculator> {
             ),
           ],
         ),
-
-
       ],
     );
   }

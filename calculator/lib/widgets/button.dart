@@ -19,16 +19,17 @@ class CalculatorButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Container(
+        padding: EdgeInsets.all(1),
         color: backgroundColor,
         child: FlatButton(
           color: backgroundColor,
-          padding: EdgeInsets.symmetric(horizontal: 15, vertical: 25),
+          padding: EdgeInsets.symmetric(horizontal: 10, vertical: 25),
           onPressed: press,
           child: Text(
             "$text",
             style: TextStyle(
               color: textColor,
-              fontSize: 20,
+              fontSize: 25,
             ),
           ),
         ),
