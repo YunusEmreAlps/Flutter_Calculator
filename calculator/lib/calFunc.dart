@@ -5,8 +5,6 @@ List<String> _parameters = [];
 
 String displayInputs;
 
-int counter = 0;
-
 List<String> allInputs = [];
 
 calculation(String input) {
@@ -29,12 +27,12 @@ calculation(String input) {
     num2List = [];
     allInputs = ["$result"];
     return;
-  }
-  else if (num2List.length == 0 && input == "=") {
+  } else if (num2List.length == 0 && input == "=") {
     return; // if one value input then press '=' then it did nothing
   }
 
-  if (input == "0" ||
+  if (input == "±" ||
+      input == "0" ||
       input == "1" ||
       input == "2" ||
       input == "3" ||
@@ -46,24 +44,41 @@ calculation(String input) {
       input == "9" ||
       input == ".") {
     if (_parameters.length == 0 && result == null) {
-      num1List.add(input);
+      if (input != "±") {
+        num1List.add(input);
+      } else {
+        num1List.insert(0, "-");
+      }
       // When pressed "=" after that hit any number
     } else if (_parameters.length == 0 && result != null) {
-      result = null;
-      num1List = [];
-      allInputs = [];
-      num1List.add(input);
+      if (input != "±") {
+        result = null;
+        num1List = [];
+        allInputs = [];
+        num1List.add(input);
+      } else {
+        num1List.insert(0, "-");
+      }
     } else {
-      num2List.add(input);
+      if (input != "±") {
+        num2List.add(input);
+      } else {
+        num2List.insert(0, "-");
+      }
     }
   }
-  if (input == " + " || input == " - " || input == " x " || input == " ÷ " || input == " mod " || input == " % ") {
+  if (input == " + " ||
+      input == " - " ||
+      input == " x " ||
+      input == " ÷ " ||
+      input == " mod " ||
+      input == " % ") {
     if (_parameters.length == 0) {
       // When for the first time we hit any Operator button
-      _parameters.add(input); 
+      _parameters.add(input);
 
       // Percent
-      if((input == " % ")) {
+      if ((input == " % ")) {
         allOperations();
       }
     } else {
@@ -73,7 +88,7 @@ calculation(String input) {
     }
   }
 
-  if((input != " % ")) {
+  if ((input != " % ") || (input != "±")) {
     allInputs.add(input);
     displayInputs = allInputs.join();
   }
@@ -100,14 +115,12 @@ void allOperations() {
     num1List = ["$divi"];
     num2List = [];
     result = divi;
-  }
-  else if (_parameters[_parameters.length - 1] == " mod ") {
-    double mod = module(num1List.join(), num2List.join());
+  } else if (_parameters[_parameters.length - 1] == " mod ") {
+    double mod = modulus(num1List.join(), num2List.join());
     num1List = ["$mod"];
     num2List = [];
     result = mod;
-  }
-  else if (_parameters[_parameters.length - 1] == " % ") {
+  } else if (_parameters[_parameters.length - 1] == " % ") {
     double per = percent(num1List.join());
     num1List = [];
     _parameters = [];
@@ -139,7 +152,7 @@ division(String num1, String num2) {
   return diviResult;
 }
 
-module(String num1, String num2) {
+modulus(String num1, String num2) {
   double modResult = double.parse(num1) % double.parse(num2);
   return modResult;
 }

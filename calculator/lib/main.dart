@@ -87,7 +87,7 @@ class _CalculatorState extends State<Calculator> {
                 });
               },
             ),
-            // Modulo
+            // Modulus
             CalculatorButton(
               text: "mod",
               backgroundColor: kSecondaryLightColor.withOpacity(0.3),
@@ -272,12 +272,15 @@ class _CalculatorState extends State<Calculator> {
         // Buttons (Numbers, Addition)
         Row(
           children: <Widget>[
-            // Nothing
+            // Sign
             CalculatorButton(
-              text: "",
+              text: "±",
               backgroundColor: kSecondaryLightColor.withOpacity(0.3),
-              textColor: kSurfaceDarkColor,
+              textColor: kPrimaryColor,
               press: () {
+                setState(() {
+                  calculation("±");
+                });
               },
             ),
             // 0
