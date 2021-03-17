@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
       home: SafeArea(
         child: Scaffold(
           body: Calculator(),
-          resizeToAvoidBottomPadding: false,
+          resizeToAvoidBottomInset: false,
         ),
       ),
     );
