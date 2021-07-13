@@ -86,7 +86,7 @@ git clone https://github.com/YunusEmreAlps/Flutter_Calculator.git
 
 ### Setup
 
-To run the app you need to have an online emulator or a plugged device and run the following command in the root of the application (touch-flutter/app)
+To run the app you need to have an online emulator or a plugged device and run the following command in the root of the application.
 
 #### Android
 ```
