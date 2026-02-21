@@ -1,140 +1,63 @@
-<!-- PROJECT LOGO -->
-<br />
-<p align="center">
-  <a href="https://github.com/YunusEmreAlps/Flutter_Resume_App_UI/tree/master/my_resume">
-    <img src="ss/Logo1.png" alt="Logo" width="400">
-  </a>
+<div align="center">
+  <img src="ss/Logo1.png" alt="Calculator Logo" width="400">
 
-  <h3 align="center">Calculator</h3>
+[![Report Bug](https://img.shields.io/badge/Report-Bug-red.svg)](https://github.com/YunusEmreAlps/Flutter_Calculator/issues) [![Request Feature](https://img.shields.io/badge/Request-Feature-green.svg)](https://github.com/YunusEmreAlps/Flutter_Calculator/issues)
+</div>
 
-  <p align="center">
-    Calculator provides simple and advanced mathematical functions in a beautifully designed app.
-    <br />
-    <a href="https://github.com/YunusEmreAlps/Flutter_Resume_App_UI/">Download</a>
-    ·
-    <a href="https://github.com/YunusEmreAlps/Flutter_Calculator/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/YunusEmreAlps/Flutter_Calculator/issues">Request Feature</a>
-  </p>
-</p>
+# Calculator App
 
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#clone">Clone</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#Screenshots">Screenshots</a></li>
-  </ol>
-</details>
+This is a simple calculator app built with Flutter. It provides basic arithmetic operations such as addition, subtraction, multiplication, and division. The app has a clean and user-friendly interface, making it easy to use for everyday calculations.
 
+## Table of Contents
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
-This calculator works like a normal calculator and can do simple tasks by using this calculator like summation or multiplication type things. Later I will add animation on this and add more facilities.
-
-- [x] Summation
-- [x] Subtraction
-- [x] Multiplication
-- [x] Division
-- [x] Percentage
-- [ ] Sine, Cosine and Tangent
-- [ ] Log, ln
-- [ ] **Animation**
-
+- [Calculator App](#calculator-app)
+  - [Table of Contents](#table-of-contents)
+    - [Built With](#built-with)
+    - [Installation](#installation)
+  - [Screenshots](#screenshots)
+  - [Contributing](#contributing)
+  - [Contact](#contact)
 
 ### Built With
 
-* [Flutter](https://flutter.dev)
+- [Flutter](https://flutter.dev)
+- [Dart](https://dart.dev)
 
+### Installation
 
-<!-- GETTING STARTED -->
-## 🚀 Getting Started
+```bash
+# Move to your workspace
+cd <your-workspace>
 
-### Prerequisites
+# Clone this project into your workspace
+git clone <repository-url>
 
-To run any Android application built with Flutter you need to configure the enviroments in your machine, you can do this following the the tutorial provided by Google in [Flutter website](https://flutter.dev/docs/get-started/install)
+# Move to the project root directory
+cd calculator
 
-- Flutter SDK
-- Android Studio (to download Android SDK)
-- Xcode (for iOS develop only)
-- Any IDE with Flutter SDK installed (ie. IntelliJ, Android Studio, VSCode etc)
-- A little knowledge of Dart and Flutter
+# Open the project in your favorite IDE
+code . # For Visual Studio Code
 
-### Clone
+# Install dependencies 
+flutter pub get
 
-- Clone this repo to your local machine using:
-
-```
-git clone https://github.com/YunusEmreAlps/Flutter_Calculator.git
-```
-
-### Setup
-
-To run the app you need to have an online emulator or a plugged device and run the following command in the root of the application.
-
-#### Android
-```
+# Run the app
 flutter run
-``` 
-### iOS (_MAC Only_)
-
 ```
-flutter run
-``` 
 
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/YunusEmreAlps/Flutter_Calculator/issues) for a list of proposed features (and known issues).
-
-
-<!-- CONTRIBUTING -->
-## 🤔 Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-
-<!-- LICENSE -->
-## 📝 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-
-<!-- CONTACT -->
-## 📌 Contact
-
-- Linkedin at [Yunus Emre Alpu](https://www.linkedin.com/in/yunus-emre-alpu-5b1496151/)
-
-<!-- SCREENSHOTS -->
 ## Screenshots
 
-UI              |  UI               | UI               
-:-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/YunusEmreAlps/Flutter_Calculator/blob/master/calculator/ss/1.png?raw=true)|![](https://github.com/YunusEmreAlps/Flutter_Calculator/blob/master/calculator/ss/2.png?raw=true)|![](https://github.com/YunusEmreAlps/Flutter_Calculator/blob/master/calculator/ss/3.png?raw=true)|
+| UI | UI | UI |
+| --- | --- | --- |
+| ![Calculator UI 1](https://github.com/YunusEmreAlps/Flutter_Calculator/blob/master/ss/1.png?raw=true) | ![Calculator UI 2](https://github.com/YunusEmreAlps/Flutter_Calculator/blob/master/ss/2.png?raw=true) | ![Calculator UI 3](https://github.com/YunusEmreAlps/Flutter_Calculator/blob/master/ss/3.png?raw=true) |
+| ![Calculator UI 4](https://github.com/YunusEmreAlps/Flutter_Calculator/blob/master/ss/4.png?raw=true) | ![Calculator UI 5](https://github.com/YunusEmreAlps/Flutter_Calculator/blob/master/ss/5.png?raw=true) | ![Calculator UI 6](https://github.com/YunusEmreAlps/Flutter_Calculator/blob/master/ss/6.png?raw=true) |
 
-UI              |  UI               | UI               
-:-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/YunusEmreAlps/Flutter_Calculator/blob/master/calculator/ss/4.png?raw=true)|![](https://github.com/YunusEmreAlps/Flutter_Calculator/blob/master/calculator/ss/5.png?raw=true)|![](https://github.com/YunusEmreAlps/Flutter_Calculator/blob/master/calculator/ss/6.png?raw=true)|
+## Contributing
 
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Contact
+
+Thanks to the following people who have contributed to this project:
+
+- [Yunus Emre Alpu](https://www.linkedin.com/in/yunus-emre-alpu-5b1496151/) - Creator and Maintainer
